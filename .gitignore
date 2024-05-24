@@ -1,0 +1,47 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/ImGui DirectX 11 Kiero Hook/offsets/animationsystem.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/buttons.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/client.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/engine2.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/host.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/interfaces.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/materialsystem2.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/networksystem.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/offsets.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/panorama.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/particles.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/pulse_system.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/rendersystemdx11.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/resourcesystem.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/scenesystem.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/schemasystem.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/server.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/soundsystem.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/vphysics2.dll.hpp
+/ImGui DirectX 11 Kiero Hook/offsets/worldrenderer.dll.hpp
+/ImGui DirectX 11 Kiero Hook/x64/Release/ImGui Di.04B17470.tlog
+/ImGui DirectX 11 Kiero Hook/x64/Release/buffer.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/hde32.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/hde64.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/hook.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/ImGui DirectX 11 Kiero Hook.dll.recipe
+/ImGui DirectX 11 Kiero Hook/x64/Release/ImGui DirectX 11 Kiero Hook.iobj
+/ImGui DirectX 11 Kiero Hook/x64/Release/ImGui DirectX 11 Kiero Hook.ipdb
+/ImGui DirectX 11 Kiero Hook/x64/Release/ImGui DirectX 11 Kiero Hook.log
+/ImGui DirectX 11 Kiero Hook/x64/Release/imgui.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/imgui_demo.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/imgui_draw.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/imgui_impl_dx11.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/imgui_impl_win32.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/imgui_tables.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/imgui_widgets.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/kiero.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/main.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/MinHook.res
+/ImGui DirectX 11 Kiero Hook/x64/Release/trampoline.obj
+/ImGui DirectX 11 Kiero Hook/x64/Release/vc143.pdb
+/x64/Release
