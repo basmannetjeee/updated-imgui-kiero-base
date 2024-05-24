@@ -1,12 +1,7 @@
-# ImGui-DirectX-11-Kiero-Hook
-Universal ImGui implementation through DirectX 11 Hook (kiero)
-<h1>Setting up the solution</h1>
-<ul>
-  <li>Download and install <a href="https://www.microsoft.com/en-us/download/details.aspx?id=6812">DirectX SDK</a></li>
-  <li>Open the solution on Visual Studio and open the project Properties</li>
-  <li>Go to VC++ Directories -> Include Directories. Click on 'Edit' and select the Include folder <br/>located on your DirectX SDK installation path. It is generally this one: <br/>%programfiles(x86)%\Microsoft DirectX SDK (June 2010)\Include\
-  <li>Now go to VC++ Directories -> Library Directories. Click on 'Edit' and select the library folder <br/> located on your DirectX SDK installation path. It is generally this one - choose x86 for 32bit and x64 for 64bit: <br/>%programfiles(x86)%\Microsoft DirectX SDK (June 2010)\Lib\</li>
-  <li><b>Done!</b></li>
-</ul>
-<h2>Kiero</h2>
-<p>You can find Kiero's official repository <a href="https://github.com/Rebzzel/kiero">here</a>
+<h1 align="center" id="title">DX11 ImGui Kiero hook</h1>
+
+<p align="center"><img src="https://socialify.git.ci/basmannetjeee/updated-imgui-kiero-base/image?description=1&amp;descriptionEditable=A%20very%20simple%20imgui%20base%20for%20CS2%0A(and%20really%20any%20other%20game)&amp;font=Source%20Code%20Pro&amp;forks=1&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Plus&amp;stargazers=1&amp;theme=Light" alt="project-image" width="500"></p>
+
+-----------
+<p align="center">A simple base which provides a nice starting point for game hacking projects.<br>
+This base allows you to easily hook functions with minhook and lets you render things very simply using imgui.
