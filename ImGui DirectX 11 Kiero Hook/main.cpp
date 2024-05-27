@@ -1,4 +1,5 @@
 #include "includes.h"
+
 extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 Present oPresent;
@@ -15,6 +16,14 @@ void InitImGui()
 	io.ConfigFlags = ImGuiConfigFlags_NoMouseCursorChange;
 	ImGui_ImplWin32_Init(window);
 	ImGui_ImplDX11_Init(pDevice, pContext);
+	styleImGui();
+}
+
+void debug() {
+	AllocConsole();
+	freopen_s((FILE**)stdout, "CONOUT$", "w", stdout);
+	freopen_s((FILE**)stderr, "CONOUT$", "w", stderr);
+	printf("Started debugging\n");
 }
 
 LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
@@ -42,6 +51,7 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 			pBackBuffer->Release();
 			oWndProc = (WNDPROC)SetWindowLongPtr(window, GWLP_WNDPROC, (LONG_PTR)WndProc);
 			InitImGui();
+			debug();
 			init = true;
 		}
 
@@ -53,8 +63,39 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 	ImGui_ImplWin32_NewFrame();
 	ImGui::NewFrame();
 
-	ImGui::Begin("ImGui Window");
-	ImGui::End();
+	if (GetAsyncKeyState(VK_INSERT) & 1)
+		menu::menuOpen = !menu::menuOpen;
+
+	if (menu::menuOpen) {
+		ImGui::SetNextWindowSize(menu::windowSize);
+		ImGui::Begin("Best CS2 cheat on earth", NULL, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize);
+
+		switch (menu::currentstate) {
+			case menu::State::PRE_MENU:
+				preMenu();
+				break;
+			case menu::State::MAIN_TAB:
+				tablist();
+
+				switch (menu::tab) {
+					case 1:
+						tabs::mainTab();
+						break;
+					case 2:
+						tabs::visualsTab();
+						break;
+					case 3:
+						tabs::movementTab();
+						break;
+					case 4:
+						tabs::exploitTab();
+						break;
+				}
+				break;
+		}
+
+		ImGui::End();
+	}
 
 	ImGui::Render();
 
